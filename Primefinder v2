@@ -12,10 +12,8 @@ def primefinder(n):
         if prime[y]:
             print(y)
 
-if __name__ == "__main__":
-    n = 1000000
-    print(n)
-    primefinder(n)
+
+primefinder(1000000)
 
 end = time.time()
 print(end - start)
