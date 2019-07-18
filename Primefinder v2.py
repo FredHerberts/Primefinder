@@ -10,12 +10,12 @@ def primefinder(number):
             primelist.append(y)
             for x in range(y+y, number + 1,y):
                 prime[x] = False
-    for x in range(y,number+1,2):
+    for x in range(y+2,number+1,2):
         if prime[x] == True:
             primelist.append(x)
 
-primefinder(100000)
-print(primelist)
+primefinder(1000000)
+print(len(primelist))
 
 end = time.time()
 print(end - start)
