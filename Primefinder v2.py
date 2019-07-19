@@ -4,7 +4,7 @@ start = time.time()
 primelist= [2]
 
 def primefinder(number):
-    prime = [True for x in range(number + 1)]
+    prime = [True] * (number+1)
     for y in range(3,int(math.sqrt(number+1)),2):
         if prime[y] == True:
             primelist.append(y)
@@ -14,7 +14,7 @@ def primefinder(number):
         if prime[x] == True:
             primelist.append(x)
 
-primefinder(1000000)
+primefinder(10000000)
 print(len(primelist))
 
 end = time.time()
