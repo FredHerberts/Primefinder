@@ -12,7 +12,7 @@ int main()
     std::fill_n(prime, number+1, 1);
     for (int y = 3;y < sqrt(number+1);y+= 2)
     {if (prime[y] == 1)
-    {for (int x = y*y;x < number+1; x += y)
+    {for (int x = y*y;x < number+1; x += y+y)
     {prime[x] = 0;}}}
     for ( int x=3; x < number+1; x+=2){
       if (prime[x] == true){primelist.push_back(x);}}
